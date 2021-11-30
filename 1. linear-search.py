@@ -1,4 +1,4 @@
-from jovian.pythondsa import evaluate_test_case
+from jovian.pythondsa import evaluate_test_case, evaluate_test_cases
 
 def locate_card(cards, query):
     # create a variable position with value 0
@@ -18,8 +18,6 @@ def locate_card(cards, query):
             # number not found, return -1
             return -1
 
-tests = []
-
 test = {
     "input":{
         "cards": [13, 11, 10, 7, 4, 3, 1, 0],
@@ -29,11 +27,12 @@ test = {
 }
 
 # test evaluation
-evaluate_test_case(locate_card, test)
+# evaluate_test_case(locate_card, test)
 
-# query occurs in the middle
+tests = []
 tests.append(test)
 
+# query occurs in the middle
 tests.append({
     'input': {
         'cards': [13, 11, 10, 7, 4, 3, 1, 0],
@@ -79,7 +78,7 @@ tests.append({
         'cards': [],
         'query': 7
     },
-    'output': -1
+    'output': None
 })
 # numbers can repeat in cards
 tests.append({
@@ -98,6 +97,4 @@ tests.append({
     'output': 2
 })
 
-# for item in tests:
-#     result = locate_card(**item['input'])
-#     print(result)
+evaluate_test_cases(locate_card, test_cases=tests)
