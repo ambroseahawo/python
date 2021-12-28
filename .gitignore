@@ -1,33 +1,3 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@ambroseahawo 
-ambroseahawo
-/
-twitter-clone-react-django
-1
-00
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-Settings
-twitter-clone-react-django/.gitignore
-@ambroseahawo
-ambroseahawo Initial Commit
-Latest commit e273431 23 days ago
- History
- 1 contributor
-159 lines (128 sloc)  2.13 KB
-  
 static-root/
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 README.md
