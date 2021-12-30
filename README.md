@@ -1,2 +1,2 @@
 # python-course
-This repository is a collection of python fundamentals
+This repository is a collection of python programming language fundamentals
