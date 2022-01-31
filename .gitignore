@@ -5,7 +5,7 @@ README.md
 /node_modules
 /.pnp
 .pnp.js
-
+/exercises
 
 # testing
 /coverage
