@@ -8,6 +8,11 @@ from random import randrange
 
 
 def custom_choice(data):
+    """"implementation"""
+    # data.clear()
+    # check if data is empty
+    if not data:
+        return "Expected a Non-empty sequence"
     # randomize index from zero to len of dat exclusive
     index = randrange(0, len(data))
     # access random element via the random index
