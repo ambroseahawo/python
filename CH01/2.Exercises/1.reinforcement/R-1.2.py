@@ -1,12 +1,10 @@
-# Write a short Python function, is even(k), that takes an integer value and
-# returns True if k is even, and False otherwise. However, your function
-# cannot use the multiplication, modulo, or division operators.
+"""Write a short Python function, is even(k), that takes an integer value and
+cannot use the multiplication, modulo, or division operators."""
 
-# use bitwise operations
 
-def is_even(k):
-    if k & 1 == 0:
-        return True
-    return False
+def is_even(integer):
+    """use bitwise operations"""
+    return bool(integer & 1 == 0)
 
-print(is_even(100))
+integer_input = int(input("Enter an integer value:\n"))
+print(is_even(integer_input))
