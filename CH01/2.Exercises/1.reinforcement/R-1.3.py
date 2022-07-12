@@ -4,7 +4,7 @@ form of a tuple of length two. Do not use the built-in functions min or
 max in implementing your solution."""
 
 
-def min_max(data):
+def min_max(data: list):
     """implementation"""
     smallest = data[0]
     largest = data[0]
