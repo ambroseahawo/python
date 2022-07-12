@@ -2,7 +2,7 @@
 cannot use the multiplication, modulo, or division operators."""
 
 
-def is_even(integer):
+def is_even(integer: int):
     """use bitwise operations"""
     return bool(integer & 1 == 0)
 
