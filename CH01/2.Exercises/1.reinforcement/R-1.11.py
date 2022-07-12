@@ -3,6 +3,5 @@
 
 # list comprehension
 
-list_ = [2**number for number in range(1, 9)]
-list_.insert(0,1)
+list_ = [2**number for number in range(0, 9)]
 print(list_)
