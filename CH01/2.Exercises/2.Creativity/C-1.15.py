@@ -31,3 +31,5 @@ if __name__ == "__main__":
         input_arr.append(array_ele)
 
     print("Original array: {0}".format(input_arr))
+
+    print("Elements in array distinct?: {0}".format(is_distinct(input_arr)))
