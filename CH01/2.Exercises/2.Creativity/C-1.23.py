@@ -17,3 +17,9 @@ for values in enumerate(range(array_elements)):
     input_array.append(array_ele)
 
 print("Original array: {0}".format(input_array))
+
+try:
+    ARRAY_LENGTH = len(input_array)
+    data = input_array[ARRAY_LENGTH + 1]
+except IndexError:
+    print("\"Don’t try buffer overflow attacks in Python!\"")
