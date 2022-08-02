@@ -26,3 +26,7 @@ if __name__ == "__main__":
     char_str = input_char_str.lower()
 
     print("Number of vowels in \"{0}\": {1}".format(input_char_str ,count_vowels(list(char_str))))
+
+# get all unique occurrences.
+# https://stackoverflow.com/questions/34734933/access-contents-of-list-after-applying-counter-from-collections-module
+# https://stackoverflow.com/questions/2600191/how-do-i-count-the-occurrences-of-a-list-item
