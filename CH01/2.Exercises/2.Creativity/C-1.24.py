@@ -23,6 +23,7 @@ def unique_occurrences_combinations(arr_chars):
     counter = 0
 
     all_unique_occurrences = Counter(arr_chars)
+    print(all_unique_occurrences)
 
     for each_vowel in vowels_list:
         counter += all_unique_occurrences[each_vowel]
@@ -36,8 +37,8 @@ if __name__ == "__main__":
     input_char_str = input("Enter a character string: ").strip()
     char_str = input_char_str.lower()
 
-    # print("Number of vowels in \"{0}\": {1}".format(input_char_str ,unique_occurrences_combinations(list(char_str))))
-    print("Number of vowels in \"{0}\": {1}".format(input_char_str, count_vowels(list(char_str))))
+    print("Number of vowels in \"{0}\": {1}".format(input_char_str ,unique_occurrences_combinations(list(char_str))))
+    # print("Number of vowels in \"{0}\": {1}".format(input_char_str, count_vowels(list(char_str))))
 
 # get all unique occurrences.
 # https://stackoverflow.com/questions/34734933/access-contents-of-list-after-applying-counter-from-collections-module
