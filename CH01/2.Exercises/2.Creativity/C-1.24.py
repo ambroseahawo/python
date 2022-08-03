@@ -23,7 +23,6 @@ def unique_occurrences_combinations(arr_chars):
     counter = 0
 
     all_unique_occurrences = Counter(arr_chars)
-    print(all_unique_occurrences)
 
     for each_vowel in vowels_list:
         counter += all_unique_occurrences[each_vowel]
