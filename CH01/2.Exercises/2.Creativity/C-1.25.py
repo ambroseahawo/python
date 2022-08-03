@@ -4,11 +4,17 @@ and returns a copy of the string with all punctuation removed. For example, if 
 "Lets try Mike".
 """
 
+from string import punctuation
+
+
 def remove_punctuations(string_char):
     """implementation"""
-    new_string = string_char.replace("'", "")
 
-    return new_string
+    for each_char in punctuation:
+        if each_char in string_char:
+            string_char = string_char.replace(each_char, "")
+
+    return string_char
 
 
 if __name__ == "__main__":
