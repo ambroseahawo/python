@@ -10,8 +10,10 @@ from string import punctuation
 def remove_punctuations(string_char):
     """implementation"""
 
+    # iterate through punctuations and check if in string characters
     for each_char in punctuation:
         if each_char in string_char:
+            # if present, replace with empty
             string_char = string_char.replace(each_char, "")
 
     return string_char
