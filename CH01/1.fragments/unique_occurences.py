@@ -19,3 +19,6 @@ def unique_occurrences_combinations(arr):
     # returns a collection set of all occurrences
     # e.g unique_occurrences_combinations("sample statement".split())
     # Counter({'e': 3, 't': 3, 's': 2, 'a': 2, 'm': 2, 'p': 1, 'l': 1, ' ': 1, 'n': 1})
+
+
+print(unique_occurrences_combinations(['A', 'B', 'B', 'B', 'C', 'C']))
