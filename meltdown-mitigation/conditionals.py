@@ -40,7 +40,17 @@ def reactor_efficiency(voltage, current, theoretical_max_power):
     where generated power = voltage * current
     """
 
-    pass
+    generated_power = voltage * current
+    percentage_value = (generated_power / theoretical_max_power) * 100
+    
+    if percentage_value >= 80:
+        return "green"
+    elif 80 > percentage_value >= 60:
+        return "orange"
+    elif 60 > percentage_value >= 30:
+        return "red"
+    elif percentage_value < 30:
+        return "black"
 
 
 def fail_safe(temperature, neutrons_produced_per_second, threshold):
