@@ -37,8 +37,15 @@ def higher_card(card_one, card_two):
     3.  '2' - '10' = numerical value.
     """
 
-    pass
-
+    card_one_value = value_of_card(card_one)
+    card_two_value = value_of_card(card_two)
+    
+    if card_one_value > card_two_value:
+        return str(card_one)
+    elif card_two_value > card_one_value:
+        return str(card_two_value)
+    else:
+        return (str(card_one), str(card_two))
 
 def value_of_ace(card_one, card_two):
     """Calculate the most advantageous value for the ace card.
