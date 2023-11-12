@@ -97,14 +97,20 @@ def is_blackjack(card_one, card_two):
     3.  '2' - '10' = numerical value.
     """
 
-    # ten_card = ['10', 'K', 'Q', 'J']
-    card_combinations = [('10', 'A'), ('A', '10'), ('K', 'A'), ('A', 'K'),('Q', 'A'), ('A', 'Q'), ('J', 'A'), ('A', 'J')]
+    # card_combinations = [('10', 'A'), ('A', '10'), ('K', 'A'), ('A', 'K'),('Q', 'A'), ('A', 'Q'), ('J', 'A'), ('A', 'J')]
     
-    if (card_one, card_two) in card_combinations:
+    ten_card = ['10', 'K', 'Q', 'J']
+    permutations_list = []
+
+    for each_item in ten_card:
+        permutations_list.append(list(itertools.permutations([each_item, "A"])))
+
+    card_permutations = [item for sublist in permutations_list for item in sublist]
+    
+    if (card_one, card_two) in card_permutations:
         return True
     else:
         return False
-
 
 def can_split_pairs(card_one, card_two):
     """Determine if a player can split their hand into two hands.
