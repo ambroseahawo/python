@@ -48,6 +48,7 @@ def higher_card(card_one, card_two):
     else:
         return (str(card_one), str(card_two))
 
+
 def value_of_ace(card_one, card_two):
     """Calculate the most advantageous value for the ace card.
 
@@ -84,6 +85,7 @@ def value_of_ace(card_one, card_two):
     else:
         return 11
 
+
 def is_blackjack(card_one, card_two):
     """Determine if the hand is a 'natural' or 'blackjack'.
 
@@ -103,6 +105,7 @@ def is_blackjack(card_one, card_two):
     else:
         return False
 
+
 def can_split_pairs(card_one, card_two):
     """Determine if a player can split their hand into two hands.
 
@@ -110,7 +113,13 @@ def can_split_pairs(card_one, card_two):
     :return: bool - can the hand be split into two pairs? (i.e. cards are of the same value).
     """
 
-    pass
+    card_one_value = value_of_card(card_one)
+    card_two_value = value_of_card(card_two)
+    
+    if card_one_value == card_two_value:
+        return True
+    else:
+        return False
 
 
 def can_double_down(card_one, card_two):
