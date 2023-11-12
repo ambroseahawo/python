@@ -129,4 +129,13 @@ def can_double_down(card_one, card_two):
     :return: bool - can the hand can be doubled down? (i.e. totals 9, 10 or 11 points).
     """
 
-    pass
+    card_one_value = value_of_card(card_one)
+    card_two_value = value_of_card(card_two)
+    
+    total_value = card_one_value + card_two_value
+    double_down_total = [9,10,11]
+    
+    if total_value in double_down_total:
+        return True
+    else:
+        return False
