@@ -3,6 +3,7 @@
 How to play blackjack:    https://bicyclecards.com/how-to-play/blackjack/
 "Standard" playing cards: https://en.wikipedia.org/wiki/Standard_52-card_deck
 """
+import itertools
 
 
 def value_of_card(card):
@@ -94,8 +95,13 @@ def is_blackjack(card_one, card_two):
     3.  '2' - '10' = numerical value.
     """
 
-    pass
-
+    # ten_card = ['10', 'K', 'Q', 'J']
+    card_combinations = [('10', 'A'), ('A', '10'), ('K', 'A'), ('A', 'K'),('Q', 'A'), ('A', 'Q'), ('J', 'A'), ('A', 'J')]
+    
+    if (card_one, card_two) in card_combinations:
+        return True
+    else:
+        return False
 
 def can_split_pairs(card_one, card_two):
     """Determine if a player can split their hand into two hands.
