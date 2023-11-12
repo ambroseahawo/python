@@ -58,8 +58,30 @@ def value_of_ace(card_one, card_two):
     3.  '2' - '10' = numerical value.
     """
 
-    pass
-
+    face_cards = ['J', 'Q','K']
+    card_one_value = 0
+    card_two_value = 0
+    
+    if card_one in face_cards:
+        card_one_value = 10
+    elif card_one == 'A':
+        card_one_value = 11
+    else: 
+        card_one_value = int(card_one)
+    
+    if card_two in face_cards:
+        card_two_value = 10
+    elif card_two == 'A':
+        card_two_value = 11
+    else: 
+        card_two_value = int(card_two)
+    
+    total_value = card_one_value + card_two_value
+    
+    if (total_value + 11) > 21:
+        return 1
+    else:
+        return 11
 
 def is_blackjack(card_one, card_two):
     """Determine if the hand is a 'natural' or 'blackjack'.
