@@ -1,11 +1,12 @@
 static-root/
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-README.md
+
 # dependencies
 /node_modules
 /.pnp
 .pnp.js
-
+/exercises
+todos*
 # testing
 /coverage
 
@@ -139,6 +140,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+.vscode/
 
 # Spyder project settings
 .spyderproject
@@ -157,16 +159,3 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
-Loading complete
